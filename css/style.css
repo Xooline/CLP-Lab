@@ -14,12 +14,11 @@
 
 
 
-body{
+body {
 	background-color:#fcfcfc;
 	font-family: "SourceSansPro";
 	color:#6F6F6F;
 }
-
 
 a{
 	color:#8BCB12;
@@ -171,4 +170,45 @@ section.mission {
 
 .scroll-down a:hover{
 	background-position: center 20px;
+}
+
+.article {
+    padding-top: 15px;
+}
+
+.article-date {
+    font-family: Orbitron;
+    color: #cccccc;
+}
+
+.button {
+    height: 32px;
+    font-size: 12pt;
+    color: white;
+    background: #8BCB12;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #8BCB12;
+    background: #E1FFA9;
+    text-decoration: none;
+}
+
+.white-background{background-color:white;}
+
+.right-sidebar {
+    border-left: 3px solid #8BCB12;
+    margin-top: 115px;
+    position: fixed;
+    padding-left:15px;
+}
+
+.right-sidebar h3 {
+    color: #6F6F6F;
+}
+
+.right-sidebar li {
+    color: #8BCB12;
 }
