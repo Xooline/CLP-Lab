@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Orbitron;
+    src: url("../fonts/Orbitron/Orbitron-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: Orbitron;
+    src: url("../fonts/Orbitron/Orbitron-Regular.ttf");
+}
+@font-face {
+    font-family: "SourceSansPro";
+    src: url("../fonts/SourceSansPro/SourceSansPro-Regular.ttf");
+}
+
+
+
+body{
+	background-color:#fcfcfc;
+	font-family: "SourceSansPro";
+	color:#6F6F6F;
+}
+
+
+a{
+	color:#8BCB12;
+}
+a:hover{
+	color:#8BCB12;
+	text-decoration: underline;
+}
+
+header{
+	height: 101px;
+}
+
+nav{
+	height: 101px;
+}
+
+#primary-nav ul {
+	list-style:none;
+	position:relative;
+	float:right;
+	margin:0;
+	padding:0
+}
+
+#primary-nav ul a {
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-size:17px;
+	line-height:32px;
+	padding:0 15px;
+}
+
+#primary-nav ul li {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary-nav ul li.current-menu-item {
+	background:#ddd
+}
+
+#primary-nav ul li:hover {
+	background:#f6f6f6
+}
+
+#primary-nav ul ul {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+#primary-nav ul ul li {
+	float:none;
+	width:200px
+}
+
+#primary-nav ul ul a {
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary-nav ul ul ul {
+	top:0;
+	left:100%
+}
+
+#primary-nav ul li:hover > ul {
+	display:block
+}
+
+h1.site-title{
+	font-size: 0;
+	margin: 0;
+}
+h1.site-title a {
+    display: block;
+    background: url("../img/logo-clp-lab.png") center left no-repeat;
+    background-size: 275px 48px;
+    width: 275px;
+    height: 48px;
+    text-indent: -9999px;
+}
