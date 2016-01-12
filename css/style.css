@@ -28,12 +28,14 @@ a:hover{
 	color:#8BCB12;
 	text-decoration: underline;
 }
+.no-display{ display: none;}
 
 header{
 	height: 101px;
+	z-index: 999;
 }
 
-nav{
+header nav{
 	height: 101px;
 	padding-top: 26px;
 
@@ -44,7 +46,8 @@ nav{
 	position:relative;
 	float:right;
 	margin:0;
-	padding:0
+	padding:0;
+	z-index:9999;
 }
 
 #primary-nav ul a {
@@ -64,11 +67,14 @@ nav{
 }
 
 #primary-nav ul li.current-menu-item {
-	background:#ddd
+	background:#f6f6f6;
+	border-bottom:3px solid #8BCB12;
+	border-bottom-color:#8BCB12;
 }
 
 #primary-nav ul li:hover {
-	background:#f6f6f6
+	border-bottom:3px solid #8BCB12;
+	border-bottom-color:#8BCB12;
 }
 
 #primary-nav ul ul {
@@ -116,9 +122,50 @@ h1.site-title a {
 .riquadri-home div{
 	background-color: #f2f2f2;
 	border-left: 1px solid #fcfcfc;
+	border-bottom: 1px solid #fcfcfc;
 	text-align: center;
 	height: 600px;
 }
 .riquadri-home div:nth-first-child{
 	border: none;
+}
+
+ul.no-style-ul , ul.no-style-ul li{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: black;
+	font-family: Orbitron;
+	font-weight: bold;
+}
+
+section.riquadri-home{
+	height: 600px;
+}
+section.mission {
+	padding-top: 88px;
+}
+
+.scroll-down{
+	text-align: center;
+	margin: -32px auto;
+	display: block;
+	position: relative; 
+
+}
+.scroll-down a{
+	background: url("../img/scroll-down.png") center no-repeat #fff;
+	height: 64px;
+	width: 64px;
+	display: block;
+	border-radius: 999px;
+	text-align: center;
+	margin: auto auto;
+	z-index: 999999999;
+	position: relative; 
+
+
 }
