@@ -35,6 +35,8 @@ header{
 
 nav{
 	height: 101px;
+	padding-top: 26px;
+
 }
 
 #primary-nav ul {
@@ -100,6 +102,7 @@ nav{
 h1.site-title{
 	font-size: 0;
 	margin: 0;
+	float: left;
 }
 h1.site-title a {
     display: block;
@@ -108,4 +111,14 @@ h1.site-title a {
     width: 275px;
     height: 48px;
     text-indent: -9999px;
+}
+
+.riquadri-home div{
+	background-color: #f2f2f2;
+	border-left: 1px solid #fcfcfc;
+	text-align: center;
+	height: 600px;
+}
+.riquadri-home div:nth-first-child{
+	border: none;
 }
