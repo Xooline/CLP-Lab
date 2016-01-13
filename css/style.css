@@ -252,15 +252,12 @@ footer{
 footer .left-footer{
 	position: relative;
 	text-align: right;
-	margin-top: 25px;
-	padding-bottom: 25px;
+	margin-top: 12px;
 }
 footer .right-footer{
 	position: relative;
-	margin-top: 28px;
+	margin-top: 22px;
 	border-left: 1px solid #000;
-	padding-top: 9px;
-	padding-bottom: 6px;
 }
 footer a{ color: #fff; text-decoration: underline; }
 footer a:hover{ color:#ccc;}
