@@ -39,6 +39,7 @@ body {
 	background-color:#fcfcfc;
 	font-family: "SourceSansPro";
 	color:#6F6F6F;
+    font-size:14px;
 }
 a{ color:#8BCB12; }
 a:hover{
@@ -75,15 +76,21 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Orbitron;
 	font-weight: bold;
 }
-h1 {font-size:36pt;}
-h2 {font-size:26pt;}
+h1 {font-size: 2em;}
+h2 {font-size:1.5em;}
+h3 {font-size:1.17em;}
+h4 {font-size:.97em;}
+h5 {font-size:.83em;}
+h6 {font-size:.67em;}
 .button {
-    height: 32px;
-    font-size: 12pt;
+    display: inline-block;
+    font-size: 1.12em;
     color: white;
     background: #8BCB12;
     padding: 14px;
+    text-align: center;
     text-decoration: none;
+    margin:8px 0px 8px 0px
 }
 
 .button:hover {
@@ -92,9 +99,14 @@ h2 {font-size:26pt;}
     text-decoration: none;
 }
 
+.img-medium {
+    width: 50%;
+    height: 50%;
+}
+
 /*** HEADER ***/
 
-header{
+body > header{
 	height: 101px;
 	z-index: 999;
 }
@@ -213,10 +225,15 @@ section.mission {
 }
 .article-date {
     font-family: Orbitron;
-    font-size:12pt;
+    font-size:0.75em;
     color: #cccccc;
+    margin-bottom: 15px;
 }
 .white-background{background-color:white;}
+
+article h2 {margin-bottom:5px;}
+
+article head {height: 100%;}
 
 /*** RIGHT SIDEBAR ***/
 .right-sidebar {
