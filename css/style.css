@@ -193,7 +193,7 @@ section.mission {
 /*** RIGHT SIDEBAR ***/
 .right-sidebar {
     border-left: 3px solid #8BCB12;
-    margin-top: 115px;
+    /**margin-top: 115px;*/
     position: fixed;
     padding-left:15px;
 }
@@ -201,10 +201,24 @@ section.mission {
 .right-sidebar h3 {
     color: #6F6F6F;
 }
+.right-sidebar ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
 
 .right-sidebar li {
-    color: #8BCB12;
+	padding-left: 1em;
+	text-indent: .5em;
 }
+.right-sidebar li {
+	color: #8BCB12;
+}
+.right-sidebar li:before {
+	content: "• ";
+	color: #6F6F6F;
+}
+
 
 /*** FOOTER ***/
 footer{
