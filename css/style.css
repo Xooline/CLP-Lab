@@ -272,6 +272,8 @@ article head {height: 100%;}
 	background-color: #e1ffa9;
 	text-align: center;
 	box-shadow: 5px 5px 10px #B7B7B7;
+    margin-top: 53px;
+    margin-bottom: 20px;
 }
 .member-card figure{
 	position: relative;
