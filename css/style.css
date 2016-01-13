@@ -92,6 +92,11 @@ h6 {font-size:.67em;}
     text-decoration: none;
 }
 
+.img-medium {
+    width: 50%;
+    height: 50%;
+}
+
 /*** HEADER ***/
 
 body > header{
@@ -215,6 +220,7 @@ section.mission {
     font-family: Orbitron;
     font-size:0.75em;
     color: #cccccc;
+    margin-bottom: 15px;
 }
 .white-background{background-color:white;}
 
