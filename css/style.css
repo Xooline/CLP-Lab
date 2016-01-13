@@ -68,6 +68,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Orbitron;
 	font-weight: bold;
 }
+h1 {font-size:36pt;}
+h2 {font-size:26pt;}
 .button {
     height: 32px;
     font-size: 12pt;
@@ -200,10 +202,11 @@ section.mission {
 }
 /*** NEWS ***/
 .article {
-    padding-top: 15px;
+    /**padding-top: 15px;*/
 }
 .article-date {
     font-family: Orbitron;
+    font-size:12pt;
     color: #cccccc;
 }
 .white-background{background-color:white;}
