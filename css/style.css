@@ -90,7 +90,8 @@ h6 {font-size:.67em;}
     padding: 14px;
     text-align: center;
     text-decoration: none;
-    margin:8px 0px 8px 0px
+    margin:8px 0px 8px 0px;
+    transition: background .5s;
 }
 
 .button:hover {
@@ -102,6 +103,9 @@ h6 {font-size:.67em;}
 .img-medium {
     width: 50%;
     height: 50%;
+}
+figure.right{
+	float: right;
 }
 
 /*** HEADER ***/
@@ -269,9 +273,9 @@ article head {height: 100%;}
 	margin: auto;
 	width: 228px;
 	height: 245px;
-	background-color: #e1ffa9;
+	background-color: #fcfcfc;
 	text-align: center;
-	box-shadow: 5px 5px 10px #B7B7B7;
+	box-shadow: 5px 5px 10px #B7B7B7, inset 0px 0px 0px 2px #8bcb12;
     margin-top: 53px;
     margin-bottom: 20px;
 }
