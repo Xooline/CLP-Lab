@@ -71,16 +71,16 @@ ul.no-style-ul{
     -webkit-margin-end: 0;
     -webkit-padding-start: 0;
 }
-ul{
+ul.green {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-li{
+ul.green li{
 	padding-left: 1em;
 	text-indent: .5em;
 }
-li::before{
+ul.green li::before{
 	content: "• ";
 	color: #8BCB12;
 	padding-right: .5em;
