@@ -259,11 +259,10 @@ article head {height: 100%;}
 .right-sidebar li {
 	padding-left: 1em;
 	text-indent: .5em;
-}
-.right-sidebar li {
 	color: #8BCB12;
 }
-.right-sidebar li:before {
+
+.right-sidebar li::before {
 	content: "• ";
 	color: #6F6F6F;
 }
