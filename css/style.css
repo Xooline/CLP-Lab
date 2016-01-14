@@ -245,14 +245,62 @@ section.mission {
 .scroll-down a:hover{
 	background-position: center 20px;
 }
+.riquadri-home li{
+	overflow: hidden;
+}
 .riquadri-home a{
 	font-size: 30px;
     color: #6f6f6f;
     font-family: Orbitron;
 }
 .riquadri-home .writing{
+	position: relative;
 	margin-top: 285px;
 }
+.riquadri-home .animazione{
+    position: absolute;
+    top: 285px;
+    width: 100%;
+}
+@keyframes rotate
+{
+	0%
+	{
+		transform: rotate(0deg) scale(1);
+	}
+	50%
+	{
+		transform: rotate(180deg) scale(0.8);
+	}
+	100%
+	{
+		transform: rotate(360deg) scale(1);
+	}
+}
+svg#gfx-lines .gfx-arrowline:nth-of-type(1)
+{
+	animation: rotate 20s linear infinite;
+}
+svg#gfx-lines .gfx-arrowline:nth-of-type(2)
+{
+	animation: rotate 40s linear infinite;
+}
+svg#gfx-lines .gfx-arrowline:nth-of-type(3)
+{
+	animation: rotate 60s linear infinite;
+}
+svg#gfx-lines .gfx-arrowline:nth-of-type(4)
+{
+	animation: rotate 80s linear infinite;
+}
+svg#gfx-lines .gfx-arrowline:nth-of-type(5)
+{
+	animation: rotate 100s linear infinite;
+}
+svg#gfx-lines .gfx-arrowline{
+    animation-play-state: running !important;
+}
+
 /*** NEWS ***/
 .article {
     /**padding-top: 15px;*/
