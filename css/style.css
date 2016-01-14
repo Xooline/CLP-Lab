@@ -249,13 +249,16 @@ section.mission {
 	overflow: hidden;
 }
 .riquadri-home a{
+	display: block;
+	width: 100%;
+	height: 100%;
 	font-size: 30px;
     color: #6f6f6f;
     font-family: Orbitron;
 }
 .riquadri-home .writing{
 	position: relative;
-	margin-top: 285px;
+	top: 285px;
 }
 .riquadri-home .animazione{
     position: absolute;
