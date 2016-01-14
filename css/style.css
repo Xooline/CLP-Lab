@@ -183,7 +183,7 @@ header nav{
 	background:#fff;
 	padding:0;
 	transition: opacity .3s linear;
-	box-shadow: 4px 4px 10px -7px #8BCB12;
+	box-shadow: 4px 4px 10px -7px #777;
 }
 #primary-nav ul ul li {
 	float:none;
@@ -215,7 +215,7 @@ header nav{
 	text-align: center;
 	height: 600px;
 }
-.riquadri-home div:nth-first-child{
+.riquadri-home div:first-child{
 	border: none;
 }
 section.riquadri-home{
