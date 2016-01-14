@@ -160,12 +160,20 @@ header nav{
 	background:#f6f6f6;
 	box-shadow: inset 0px -2px 0px 0px #8BCB12;
 }*/
+#primary-nav li > a:after { 
+	font-family: FontAwesome; 
+	color: #6f6f6f;
+	margin-left: 5px; 
+	content: '\f107'; 
+}
+#primary-nav li > a:only-child:after { margin-left: 0; content: ''; }
 #primary-nav ul li.current-menu-item a {
 	box-shadow: inset 0px -2px 0px 0px #8BCB12;
 }
 #primary-nav ul a:hover {
 	box-shadow: inset 0px -2px 0px 0px #8BCB12;
 }
+
 #primary-nav ul ul {
 	visibility: hidden;
 	opacity: 0;
