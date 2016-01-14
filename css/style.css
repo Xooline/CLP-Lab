@@ -71,6 +71,20 @@ ul.no-style-ul{
     -webkit-margin-end: 0;
     -webkit-padding-start: 0;
 }
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li{
+	padding-left: 1em;
+	text-indent: .5em;
+}
+li::before{
+	content: "• ";
+	color: #8BCB12;
+	padding-right: .5em;
+}
 h1, h2, h3, h4, h5, h6 {
 	color: black;
 	font-family: Orbitron;
