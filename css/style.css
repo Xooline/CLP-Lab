@@ -267,41 +267,35 @@ section.mission {
     transform: translate(-50%, -50%);
     width: 100%;
 }
-@keyframes rotate
-{
-	0%
-	{
+@keyframes rotate{
+	0%{
 		transform: rotate(0deg) scale(1);
 	}
-	50%
-	{
+	50%{
 		transform: rotate(180deg) scale(0.8);
 	}
-	100%
-	{
+	100%{
 		transform: rotate(360deg) scale(1);
 	}
 }
 
-svg#gfx-lines .gfx-arrowline:nth-of-type(1)
-{
+svg#gfx-lines .gfx-arrowline:nth-of-type(1){
 	animation: rotate 20s linear infinite;
 }
-svg#gfx-lines .gfx-arrowline:nth-of-type(2)
-{
+svg#gfx-lines .gfx-arrowline:nth-of-type(2){
 	animation: rotate 40s linear infinite;
 }
-svg#gfx-lines .gfx-arrowline:nth-of-type(3)
-{
+svg#gfx-lines .gfx-arrowline:nth-of-type(3){
 	animation: rotate 60s linear infinite;
 }
-svg#gfx-lines .gfx-arrowline:nth-of-type(4)
-{
+svg#gfx-lines .gfx-arrowline:nth-of-type(4){
 	animation: rotate 80s linear infinite;
 }
-svg#gfx-lines .gfx-arrowline:nth-of-type(5)
-{
+svg#gfx-lines .gfx-arrowline:nth-of-type(5){
 	animation: rotate 100s linear infinite;
+}
+svg#gfx-lines .gfx-arrowline:nth-of-type(5){
+	animation: rotate 140s linear infinite;
 }
 svg#gfx-lines .gfx-arrowline{
     animation-play-state: running !important;
@@ -313,58 +307,47 @@ svg#gfx-lines .gfx-arrowline{
 .riquadri-home a:hover #gfx-circle, .riquadri-home a:hover #gfx-lines{
 	transform: scale(1);
 }
-@keyframes swing
-{
-	0%
-	{
+
+@keyframes swing{
+	0%{
 		transform: rotate(-1deg) scale(1);
 	}
-	50%
-	{
+	50%{
 		transform: rotate(1deg) scale(0.80);
 	}
-	100%
-	{
+	100%{
 		transform: rotate(-1deg) scale(1);
 	}
 }
-#triangle-gfx-lines line:nth-of-type(1)
-{
+#triangle-gfx-lines line:nth-of-type(1){
 	animation: swing 11s ease infinite;
 
 }
-#triangle-gfx-lines line:nth-of-type(2)
-{
+#triangle-gfx-lines line:nth-of-type(2){
 	animation: swing 13s ease infinite;
 
 }
-#triangle-gfx-lines line:nth-of-type(3)
-{
+#triangle-gfx-lines line:nth-of-type(3){
 	animation: swing 22s ease infinite;
 
 }
-#triangle-gfx-lines line:nth-of-type(4)
-{
+#triangle-gfx-lines line:nth-of-type(4){
 	animation: swing 15s ease infinite;
 
 }
-#triangle-gfx-lines line:nth-of-type(5)
-{
+#triangle-gfx-lines line:nth-of-type(5){
 	animation: swing 10s ease infinite;
 
 }
-#triangle-gfx-lines line:nth-of-type(6)
-{
+#triangle-gfx-lines line:nth-of-type(6){
 	animation: swing 4s ease infinite;
 
 }
-#triangle-gfx-lines line:nth-of-type(7)
-{
+#triangle-gfx-lines line:nth-of-type(7){
 	animation: swing 6s ease infinite;
 
 }
-#triangle-gfx-lines line:nth-of-type(8)
-{
+#triangle-gfx-lines line:nth-of-type(8){
 	animation: swing 2s ease infinite;
 
 }
@@ -373,7 +356,7 @@ svg#gfx-lines .gfx-arrowline{
 }
 .riquadri-home #gfx-triangle{
 	transition: transform .5s ease;
-	transform: rotate(180deg) scale(0);
+	transform: rotate(-180deg) scale(0);
 }
 .riquadri-home a:hover #gfx-triangle{
 	transform:  rotate(0deg) scale(1);
@@ -383,10 +366,49 @@ svg#gfx-lines .gfx-arrowline{
 	transform: scale(0);
 }
 .riquadri-home a:hover #triangle-gfx-lines{
-	transform:  	scale(1);
+	transform: scale(1);
 }
 
+@keyframes zoom{
+	0%{
+		transform: scale(.6);
+	}
+	25%{
+		transform: scale(1.5);
+	}
+	50%{
+		transform: scale(0.8);
+	}
+	75%{
+		transform: scale(1.7);
+	}
+	100%{
+		transform: scale(.6);
+	}
+}
+#rhombus-gfx-circles circle:nth-of-type(1){
+	animation: zoom 35s ease infinite;
+}
+#rhombus-gfx-circles circle:nth-of-type(2){
+	animation: zoom 14s ease infinite;
+}
+#rhombus-gfx-circles circle:nth-of-type(3){
+	animation: zoom 8s ease infinite;
+}
+#rhombus-gfx-circles circle:nth-of-type(4){
+	animation: zoom 36s ease infinite;
+}
+#rhombus-gfx-circles circle:nth-of-type(5){
+	animation: zoom 22s ease infinite;
+}
 
+.riquadri-home #gfx-rhombus{
+	transition: transform .5s ease;
+	transform: rotate(360deg) scale(0);
+}
+.riquadri-home a:hover #gfx-rhombus{
+	transform: rotate(0deg) scale(1);
+}
 /*** NEWS ***/
 .article {
     /**padding-top: 15px;*/
