@@ -12,7 +12,7 @@
 ********/
 
 
-/**é FONTS ***/
+/*** FONTS ***/
 @font-face {
     font-family: Orbitron;
     src: url("../fonts/Orbitron/Orbitron-Bold.ttf");
@@ -34,12 +34,17 @@
 }
 
 /*** GENERAL ***/
-
 body {
 	background-color:#fcfcfc;
 	font-family: "SourceSansPro";
 	color:#6F6F6F;
     font-size:14px;
+}
+@media (min-width: 992px)
+.container {
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 a{ color:#8BCB12; }
 a:hover{
@@ -154,7 +159,10 @@ header nav{
 	float:left;
 	margin:0;
 	padding:0;
-	padding:0 15px;
+	padding:0 7px;
+}
+#primary-nav ul li:last-child{
+	padding-right: 0px;
 }
 /*#primary-nav ul li.current-menu-item {
 	background:#f6f6f6;
