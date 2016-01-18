@@ -153,7 +153,6 @@ header nav{
 	text-decoration:none;
 	font-size:17px;
 	line-height:32px;
-	/*padding:0 15px;*/
 	transition: box-shadow .5s;
 }
 #primary-nav ul li {
@@ -161,7 +160,7 @@ header nav{
 	float:left;
 	margin:0;
 	padding:0;
-	padding:0 9px;
+	padding:0 6px;
 }
 #primary-nav ul li:last-child{
 	padding-right: 0px;
@@ -269,6 +268,23 @@ section.mission {
 .riquadri-home .writing{
 	position: relative;
 	top: 285px;
+}
+
+.divider {
+	width: 50%;
+	border-bottom: 1px solid #6f6f6f;
+	margin: auto;
+	padding-top: 8px;
+}
+
+.riquadri-home a:hover .divider {display: none;}
+
+.riquadri-home a:hover .writing span {
+	color: #8BCB12;
+}
+
+.riquadri-home a:hover {
+	text-decoration: none;
 }
 .riquadri-home .animazione{
     position: absolute;
