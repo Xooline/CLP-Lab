@@ -178,7 +178,7 @@ header nav{
 	content: '\f107'; 
 }
 #primary-nav li > a:only-child:after { margin-left: 0; content: ''; }
-#primary-nav ul li.current-menu-item a {
+#primary-nav  ul li.current-menu-item+ a {
 	box-shadow: inset 0px -2px 0px 0px #8BCB12;
 }
 #primary-nav ul a:hover {
