@@ -128,7 +128,9 @@ h6 {font-size:.67em;}
 figure.right{
 	float: right;
 }
-
+img{
+	max-width: 100%;
+}
 /*** HEADER ***/
 
 body > header{
@@ -537,9 +539,10 @@ article head {height: 100%;}
 	font-style: italic;
 	color:#000;
 	font-size: 1.5em;
+	transition: all .2s ease;
 }
 #events h3 a:hover{
-	color:#6f6f6f;
+	color:#8bcb12;
 	text-decoration: none;
 }
 #events article{
