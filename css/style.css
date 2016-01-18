@@ -159,7 +159,7 @@ header nav{
 	float:left;
 	margin:0;
 	padding:0;
-	padding:0 7px;
+	padding:0 9px;
 }
 #primary-nav ul li:last-child{
 	padding-right: 0px;
@@ -171,7 +171,7 @@ header nav{
 #primary-nav li > a:after { 
 	font-family: FontAwesome; 
 	color: #6f6f6f;
-	margin-left: 5px; 
+	margin-left: 3px; 
 	content: '\f107'; 
 }
 #primary-nav li > a:only-child:after { margin-left: 0; content: ''; }
