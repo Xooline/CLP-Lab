@@ -128,7 +128,9 @@ h6 {font-size:.67em;}
 figure.right{
 	float: right;
 }
-
+img{
+	max-width: 100%;
+}
 /*** HEADER ***/
 
 body > header{
