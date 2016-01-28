@@ -696,10 +696,10 @@ footer a:hover{ color:#ccc;}
 	background: #d2d2d2;
     position: relative;
     z-index: -99;
-    top:24px;
+    top:22px;
 }
 #software ul li.strange::before{
-	top:63px;
+	top:60px;
 }
 #software ul li:nth-child(even){
 	padding-right: 0;
@@ -716,16 +716,23 @@ footer a:hover{ color:#ccc;}
 	text-align: center;
 	transform: translateX(0);
 }
-#software ul li:first-child a{
+#software ul li:first-child a span{
 	color: #6f6f6f;
 }
 #software ul li a{
+	text-decoration: none;
 	padding: 0 12px;
     font-size: 2.3em;
     font-weight: 600;
-    color: #000;
-    background-color: #FCFCFC;
+    color: #8BCB12;
+    background-color: #fcfcfc;
     line-height: 1.2em;
+}
+#software ul li a span{
+	color: #000;
+}
+#software ul li a:hover{
+	text-decoration: line-through;
 }
 
 
