@@ -679,7 +679,9 @@ footer a:hover{ color:#ccc;}
     z-index: -99;
     top:24px;
 }
-
+#software ul li.strange::before{
+	top:63px;
+}
 #software ul li:nth-child(even){
 	padding-right: 0;
     width: 27.3333%;
@@ -704,6 +706,9 @@ footer a:hover{ color:#ccc;}
     font-weight: 600;
     color: #000;
     background-color: #FCFCFC;
+    line-height: 1.2em;
+}
+
 
 /** FORM **/
 #logo_contacts {padding-top:55px;}
