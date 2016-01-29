@@ -331,6 +331,17 @@ svg#gfx-lines .gfx-arrowline:nth-of-type(5){
 svg#gfx-lines .gfx-arrowline{
     animation-play-state: running !important;
 }
+.riquadri-home #gfx-lines line, .riquadri-home #gfx-lines polygon, .gfx-arrowline, #rhombus-gfx-circles circle{
+	transform-origin: 525px 280px;
+}
+.riquadri-home #gfx-lines line{
+	fill:none;
+	stroke:#8bcb12;
+	stroke-miterlimit:10;
+}
+.riquadri-home #gfx-lines polygon{
+	fill:#8bcb12;
+}
 .riquadri-home #gfx-circle, .riquadri-home #gfx-lines{
 	transform: scale(0);
 	transition: all .5s ease;
@@ -382,6 +393,12 @@ svg#gfx-lines .gfx-arrowline{
 	animation: swing 2s ease infinite;
 
 }
+#triangle-gfx-lines line{
+	fill:none;
+	stroke:#8bcb12; 
+	stroke-miterlimit:10; 
+	transform-origin: 527px 361.778px;
+}
 #triangle-gfx-lines{
     animation-play-state: running !important;
 }
@@ -432,7 +449,10 @@ svg#gfx-lines .gfx-arrowline{
 #rhombus-gfx-circles circle:nth-of-type(5){
 	animation: zoom 22s ease infinite;
 }
-
+.riquadri-home #rhombus-gfx-circles circle{
+	stroke:#8bcb12; 
+	fill-opacity:0;
+}
 .riquadri-home #gfx-rhombus{
 	transition: transform .5s ease;
 	transform: rotate(360deg) scale(0);
@@ -729,10 +749,11 @@ footer a:hover{ color:#ccc;}
     line-height: 1.2em;
 }
 #software ul li a span{
+	text-shadow: 2px 2px 0px #CCCCCC;
 	color: #000;
 }
 #software ul li a:hover{
-	text-decoration: line-through;
+	text-decoration: underline;
 }
 
 
