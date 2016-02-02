@@ -779,15 +779,29 @@ footer a:hover{ color:#ccc;}
 }
 
 #software-h2 {
-	padding: 110px 88px 110px 88px;
+	padding: 130px 88px;
 	text-align: right;
+	font-weight: bold;
 }
 
 #software-ul {
-    padding: 110px 88px 110px 88px;
+    padding: 27px 88px;
     text-align: left;
 }
-
+#software-ul li{
+    font-size: 1.5em;
+    list-style: none;
+    font-family: 'Orbitron';
+    border-bottom: 2px solid #8BCB12;
+    margin-bottom: 6px;
+}
+#software-ul a{
+	color: #000;
+}
+#col-img-background{
+    margin-top: 40px;
+	background: url('../img/separator-software-down.png') no-repeat; 
+}
 /** FORM **/
 #logo_contacts {padding-top:55px;}
 label {
