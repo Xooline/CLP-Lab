@@ -592,6 +592,9 @@ article header h2:hover {color: #8bcb12;}
 #events .upcoming-events{
 	margin-top: 50px;
 }
+#events figure img{
+	width: 100%;
+}
 #events h2{
 	text-align: center;
 }
