@@ -483,9 +483,6 @@ svg#gfx-lines .gfx-arrowline{
 	transform: rotate(0deg) scale(1);
 }
 /*** NEWS ***/
-.article {
-    /**padding-top: 15px;*/
-}
 .article-date {
     font-family: Orbitron;
     font-size:0.75em;
@@ -497,6 +494,9 @@ svg#gfx-lines .gfx-arrowline{
 article h2 {margin-bottom:5px;}
 
 article head {height: 100%;}
+
+article header h2:hover {color: #8bcb12;}
+
 
 /*** RIGHT SIDEBAR ***/
 .right-sidebar {
