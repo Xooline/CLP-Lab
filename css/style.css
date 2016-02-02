@@ -496,6 +496,16 @@ article h2 {margin-bottom:5px;}
 article head {height: 100%;}
 
 article header h2:hover {color: #8bcb12;}
+.older-news{
+	margin-top: 40px;
+    padding-bottom: 15px;
+}
+.older-news a{
+	font-family: 'Orbitron';
+	font-size: 1.2em;
+	color: #6f6f6f;
+}
+.older-news i{ color: #000; margin-right: 20px; }
 
 
 /*** RIGHT SIDEBAR ***/
@@ -571,9 +581,6 @@ article header h2:hover {color: #8bcb12;}
 	margin-bottom: 5px;
 	transition: font-style .5s ease;
 }
-.member-card:hover h3{
-	font-style: normal;
-}
 .member-card .fa{
 	transition: color .5s;
 	font-size: 2.6em;
@@ -586,6 +593,7 @@ article header h2:hover {color: #8bcb12;}
 .member-card .fa-twitter:hover { color:#55acee; }
 .member-card .fa-facebook-official:hover { color:#3b5998; }
 .member-card .fa-globe:hover{ color:#000; }
+
 /*** EVENTS ***/
 #events .upcoming-events{
 	margin-top: 50px;
