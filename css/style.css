@@ -134,13 +134,14 @@ figure.right{
 img{
 	max-width: 100%;
 }
-/*** HEADER ***/
 
+/*** HEADER ***/
 body > header{
 	height: 101px;
 	z-index: 999;
 }
-header nav{
+header nav.container{
+	padding: 0;
 	height: 101px;
 	padding-top: 26px;
 }
@@ -215,6 +216,27 @@ header nav{
 #primary-nav ul li:hover > ul {
 	visibility: visible;
   	opacity: 1;
+}
+/*** BREADCRUMBS NAV ***/
+.breadcrumbs{
+	text-align: left;
+	height: 50px;
+	background: url('../img/gray-texture.jpg') repeat-x;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.breadcrumbs span{
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.breadcrumbs a{
+	color: #6f6f6f;
+}
+.breadcrumbs :first-child{
+	padding-left: 0;
+}
+.breadcrumbs span:last-of-type{
+	color: #8BCB12;
 }
 
 /*** HOME ***/
