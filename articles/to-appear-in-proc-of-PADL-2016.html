@@ -8,19 +8,19 @@
 
 
     <!-- Bootstrap's minified css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
     <!-- Pages CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 <header>
     <nav class="container" id="primary-nav">
-        <h1 class="site-title"><a href="index.html">CLP Lab</a></h1>
+        <h1 class="site-title"><a href="../index.html">CLP Lab</a></h1>
         <ul>
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="members.html">Members</a></li>
+            <li><a href="../index.html" >Home</a></li>
+            <li><a href="../members.html">Members</a></li>
             <li>
                 <a href="projects.html">Projects</a>
                 <ul>
@@ -52,51 +52,22 @@
         </ul>
     </nav>
 </header>
-<div class="container" id="news">
+<div class="container">
     <div class="row">
         <div class="col-md-8 white-background">
-            <h1>Last News from CLP Lab</h1>
-            
             <article class="article">
                 <header>
-                    <a href="articles/to-appear-in-proc-of-PADL-2016.html"><h2>To appear in proc of PADL 2016</h2></a>
+                    <h1>To appear in proc of PADL 2016</h1>
                     <div class="article-date">9 December 2015</div>
                 </header>
-                <h3>A GPU Implementation of the ASP Computation</h3>
+                <h2>A GPU Implementation of the ASP Computation</h2>
                 <p>By Agostino Dovier, Andrea Formisano, Enrico Pontelli, and Flavio Vella
 
                     Abstract
                     General Purpose Graphical Processing Units (GPUs) are affordable multi-core platforms, providing access to large number of cores, but at the price of a complex architecture with non-trivial synchronization and communication costs.
-                    This paper presents the design and implementation of a conflict-driven ASP solver, that is capable of ...
+                    This paper presents the design and implementation of a conflict-driven ASP solver, that is capable of exploiting the parallelism offered by GPUs.
+                    The proposed system builds on the notion of ASP computation, that avoids the generation of unfounded sets, enhanced by conflict analysis and learning. The proposed system uses the CPU exclusively for input and output, in order to reduce the negative impact of the expensive data transfers between the CPU and the GPU. All the solving components, i.e., the management of nogoods, the search strategy, backjumping, the search heuristics, conflict analysis and learning, and unit propagation, are performed on the GPU, by exploiting Single Instruction Multiple Threads (SIMT) parallelism. The preliminary experimental results confirm the feasibility and scalability of the approach, and the potential to enhance performance of ASP solvers.
                 </p>
-
-                <a class="button" href="#">Read More</a>
-            </article>
-            <article class="article">
-                <header>
-                    <a href="#"><h2>Greetings from Genova</h2></a>
-                    <div class="article-date">15 July 2015</div>
-                </header>
-                <img class="img-responsive img-medium" src="img/article2.jpg">
-                <p>From left to right: Nando Fioretto, Agostino Dovier, Enrico Pontelli, and Alessandro Dal Palù (all but one teachers at the GULP school on logic programming).</p>
-                <a class="button" href="#">Read More</a>
-            </article>
-            <article class="article">
-                <header>
-                        <a href="#"><h2>Journal paper on CUD@SAT</h2></a>
-                    <div class="article-date">15 July 2015</div>
-                </header>
-                <p><strong>CUD@SAT: SAT Solving on GPUs.</strong><br />
-
-                    A. Dal Palù, A. Dovier, A. Formisano, and E. Pontelli.
-                    Journal of Experimental & Theoretical Artificial Intelligence (JETAI),
-                    Volume 27(3), July 2015, pp. 293-316.
-                    (draft) DOI: 10.1080/0952813X.2014.954274
-
-                <h4>Abstract</h4>
-                ...
-                </p>
-                <a class="button" href="#">Read More</a>
             </article>
         </div>
         <div class="col-md-4">
