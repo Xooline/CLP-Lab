@@ -756,6 +756,15 @@ footer a:hover{ color:#ccc;}
 	text-decoration: underline;
 }
 
+#software-h2 {
+	padding: 110px 88px 110px 88px;
+	text-align: right;
+}
+
+#software-ul {
+    padding: 110px 88px 110px 88px;
+    text-align: left;
+}
 
 /** FORM **/
 #logo_contacts {padding-top:55px;}
