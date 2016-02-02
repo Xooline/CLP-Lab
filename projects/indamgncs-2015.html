@@ -2,9 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>CLP Lab | Projects</title>
+
+    <!-- Bootstrap's minified css -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <!-- Pages CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
+<header>
+    <nav class="container" id="primary-nav">
+        <h1 class="site-title"><a href="../index.html">CLP Lab</a></h1>
+        <ul>
+            <li><a href="../index.html" >Home</a></li>
+            <li><a href="../members.html">Members</a></li>
+            <li class="current-menu-item">
+                <a href="../projects.html">Projects</a>
+                <ul>
+                    <li><a href="#">INDAM/GNCS 2015</a></li>
+                    <li><a href="#">INDAM/GNCS 2014</a></li>
+                    <li><a href="#">INDAM/GNCS 2011</a></li>
+                    <li><a href="#">INDAM/GNCS 2010</a></li>
+                    <li><a href="#">INDAM/GNCS 2005</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../software.html">Software</a>
+                <ul>
+                    <li><a href="#">CP on GPU</a></li>
+                    <li><a href="#">CUD@SAT</a></li>
+                    <li><a href="#">Planning</a></li>
+                    <li><a href="#">GELATO</a></li>
+                    <li><a href="#">Coinduction and Bisimulation</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../events.html">Events</a>
+                <ul>
+                    <li><a href="#">Workshops</a></li>
+                </ul>
+            </li>
+            <li><a href="../news.html">News</a></li>
+            <li><a href="../contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
 
+<div class="breadcrumbs">
+    <div class="container">
+        <span><a href="../index.html">Home</a></span>
+        <i class="fa fa-angle-right"></i>
+        <span><a href="../projects.html">Projects</a></span>
+        <i class="fa fa-angle-right"></i>
+        <span>INDAM/GNCS 2015</span>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>INDAM/GNCS 2015</h1>
+            <h2>Constraint-Based Search using GPUs and applications to protein structure prediction</h2>
+            <h3>Responsabile: Agostino Dovier</h3>
+            <b>Abstract</b>
+            <p>Negli ultimi anni la diffusione delle General-Purpose Graphics Processing Units (in breve, GPU) sia come supporto hardware presente nella stragrande maggioranza degli attuali calcolatori (fissi e portatili) che come scheda aggiuntiva capace di offrire un alto grado di parallelismo a basso costo, ha spinto ricercatori di varie discipline ad esplorarne le potenzialità per gli scopi di loro interesse. Dal 2012 il gruppo dei proponenti ha presentato, in lavori su atti di convegno e riviste, diversi contributi per sfruttare le GPU per la ricerca di soluzioni in problemi vincolati, dapprima affrontando la risoluzione del problema SAT, proseguendo nella direzione di sviluppare un, più generale, ASP solver, per arrivare alla definizione di un constraint solver. In questo contesto, la GPU si è mostrata estremamente efficiente per la ricerca approssimata di soluzioni con tecniche di Large Neighborhood Search (LNS) e promettente per la parallelizzazione degli algoritmi di propagazione di vincoli complessi (denominati vincoli globali). La generalità e la capacità di manipolazione numerica di un constraint solver permette una agevole codifica del problema della predizione di una proteina e la tecnica di LNS si è mostrata particolarmente adatta alla rapida predizione di strutture sub-ottime.</p>
+            <p>Il presente progetto si articolerà principalmente ma non esclusivamente nelle seguenti tre direttive principali:</p>
+            <ol>
+                <li>studio ed implementazione parallela di algoritmi per la propagazione di vincoli globali complessi</li>
+                <li>testing delle implementazioni di cui al punto sopra sui benchmarks della Minizinc challenge, competizione annuale dei constraint solver</li>
+                <li>testing e tuning delle implementazioni di cui sopra in varianti del problema del protein structure prediction (loop modeling, protein insertion, docking, etc).</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="col-md-6 left-footer">
+        <p>
+            University of Udine &copy; 2015<br />
+            All rights reserved
+        </p>
+    </div>
+    <div class="col-md-6 right-footer">
+        <p>
+            <a href="#">Credits</a>
+        </p>
+    </div>
+</footer>
 </body>
 </html>
