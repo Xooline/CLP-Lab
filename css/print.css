@@ -7,23 +7,38 @@ h5,
 h6 {
     font-family: "Times New Roman", serif !important;
     font-style: normal !important;
+    font-size: 12pt;
+}
+h1{ font-size: 24pt !important; }
+h2{ font-size: 20pt !important; }
+h3{ font-size: 16pt !important; }
+h4{ font-size: 14pt !important; }
+
+h3, h4 {
+    page-break-after: avoid;
+}
+img {
+    page-break-before: auto;
+    page-break-after: auto;
+    page-break-inside: avoid;
+}
+.container{
+    margin: 0;
+    padding: 0;
 }
 #navbar-collapse, footer{
 	display: none;
 }
 
-body {margin: 2cm 2cm;}
-/*header {
+body {margin: 0 .5cm;}
+header {
     display: none;
-}*/
-header::before {
+}
+body::before {
     display: block;
-    content: " ";
-    background: url("../img/logo-clp-lab.png") center left no-repeat;
-    background-size: 240px 42px;
+    content: url("../img/logo-clp-lab.png");
     width: 240px;
     height: 42px;
-    margin-left: 10px;
 }
 .breadcrumbs {display: none;}
 
@@ -31,6 +46,86 @@ header::before {
 .riquadri-home {
     display: none;
 }
+section.mission {
+    padding-top: 0;
+}
 
 /* MEMBERS */
+#members .col-md-4{
+    float: left;
+    width: 50%;
+}
+#members .member-card .fa{
+    display: none;
+}
+.member-card{
+    float: left;
+    height: auto;
+    margin: 0;
+    margin-bottom: 1cm;
+}
+.member-card figure{
+    display: none;
+}
+.member-card h3{
+    position: relative;
+    top: 0;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+.member-card .social-icons{
+    top:0;
+}
 
+/*** PROJECTS ****/
+.projects-wrapper .main-project-container .container .col-md-12{
+    height: auto;
+}
+.projects-wrapper .main-project-container:nth-child(odd) h2,
+.projects-wrapper .main-project-container:nth-child(even) h2{
+    position: relative;
+    top:auto;
+    bottom: auto;
+}
+.projects-wrapper .main-project-container:nth-child(odd) h3,
+.projects-wrapper .main-project-container:nth-child(even) h3{
+    position: relative;
+    bottom: auto;
+    top:auto;
+}
+.projects-wrapper .main-project-container:nth-child(odd) h2,
+.projects-wrapper .main-project-container:nth-child(even) h2,
+.projects-wrapper .main-project-container:nth-child(odd) h3,
+.projects-wrapper .main-project-container:nth-child(even) h3{
+    left: 0 !important;
+    right: auto  !important;
+    text-align: left !important;
+}
+
+/*** SOFTWARE ***/
+#software .intro{
+    font-size: 16pt;
+}
+#software-ul {
+    padding:0;
+    text-align: left;
+}
+#software-ul li{
+    font-size: 14pt;
+    list-style: circle;
+    font-family: serif;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+#software ul.tree-ul li a{
+    font-size: 14pt;
+}
+
+/*** EVENTS ***/
+#events img{
+    display: none;
+}
+#events h3 a{
+    font-family: inherit;
+    font-size: inherit;
+}
