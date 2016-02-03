@@ -50,19 +50,7 @@ a:hover{
 	text-decoration: underline;
 }
 .no-display{ display: none;}
-h1.site-title{
-	font-size: 0;
-	margin: 0;
-	float: left;
-}
-h1.site-title a {
-    display: block;
-    background: url("../img/logo-clp-lab.png") center left no-repeat;
-    background-size: 275px 48px;
-    width: 275px;
-    height: 48px;
-    text-indent: -9999px;
-}
+
 ul.no-style-ul , ul.no-style-ul li{
 	list-style: none;
 	margin: 0;
@@ -139,6 +127,142 @@ header nav.container{
 	height: 101px;
 	padding-top: 26px;
 }
+.navbar {
+    position: relative;
+    height: 101px;
+}
+.no-js .navbar-collapse:target {
+    display: block;
+    visibility: visible;
+}
+.no-js .navbar-collapse:target .navbar-nav {
+    position: relative;
+    z-index: 9998;
+}
+.no-js .navbar-collapse-close,
+.navbar-collapse-close {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9997;
+    background-color: rgba(255,255,255,0.5);
+    font-size: 0px;
+    color: transparent;
+}
+.no-js .navbar-collapse-close:focus {
+    display: block;
+    font-size: 24px;
+    color: black;
+    background-color: rgba(100,100,255,0.25);
+    z-index: 9999;
+    padding: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+.no-js .navbar-collapse:target .navbar-collapse-close {
+    display: block;
+}
+#primary-nav{
+    padding: 26.5px 0;
+}
+#primary-nav #navbar-collapse{
+    padding: 8px 0;
+}
+#primary-nav ul li{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#primary-nav ul li ul{
+    display: none;
+}
+.container>.navbar-header{
+    margin: 0;
+}
+.site-title{
+    font-size: 0;
+    margin: 0;
+    float: left;
+}
+.site-title {
+    background: url("../img/logo-clp-lab.png") center left no-repeat;
+    background-size: 240px 42px;
+    width: 240px;
+    height: 42px;
+    margin-left: 10px;
+}
+@media (min-width: 768px){
+    #primary-nav ul li{
+        width:  auto;
+        padding: 12px 0;
+    }
+    #primary-nav ul a{
+        padding: 0;
+        margin: 0;
+    }
+    #primary-nav ul li ul{
+        display: block;
+    }
+    .site-title {
+        background-size: 275px 48px;
+        width: 275px;
+        height: 48px;
+        margin-left: 0px;
+    }
+}
+#primary-nav{
+    padding: 26.5px 0;
+}
+#primary-nav #navbar-collapse{
+    padding: 8px 0;
+}
+#primary-nav ul li{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#primary-nav ul li ul{
+    display: none;
+}
+.container>.navbar-header{
+    margin: 0;
+}
+.site-title{
+    font-size: 0;
+    margin: 0;
+    float: left;
+}
+.site-title {
+    background: url("../img/logo-clp-lab.png") center left no-repeat;
+    background-size: 240px 42px;
+    width: 240px;
+    height: 42px;
+    margin-left: 10px;
+}
+@media (min-width: 768px){
+    #primary-nav ul li{
+        width:  auto;
+        padding: 12px 0;
+    }
+    #primary-nav ul a{
+        padding: 0;
+        margin: 0;
+    }
+    #primary-nav ul li ul{
+        display: block;
+    }
+    .site-title {
+        background-size: 275px 48px;
+        width: 275px;
+        height: 48px;
+        margin-left: 0px;
+    }
+}
 #primary-nav ul {
 	list-style:none;
 	position:relative;
@@ -160,7 +284,10 @@ header nav.container{
 	float:left;
 	margin:0;
 	padding:0;
-	padding:0 10px;
+	padding:0 5px;
+}
+#primary-nav ul li:first-child{
+	padding-left: 0;
 }
 #primary-nav ul li:last-child{
 	padding-right: 0;
@@ -195,6 +322,7 @@ header nav.container{
 	box-shadow: 4px 4px 10px -7px #777;
 }
 #primary-nav ul ul li {
+	text-align: left;
 	float:none;
 	padding: 0px;
 	width:200px;
@@ -211,6 +339,12 @@ header nav.container{
 	visibility: visible;
   	opacity: 1;
 }
+.navbar-default{
+	background-color: #fcfcfc;
+	border: none;
+	margin-bottom: 0;
+}
+
 /*** BREADCRUMBS NAV ***/
 .breadcrumbs{
 	text-align: left;

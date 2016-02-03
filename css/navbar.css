@@ -36,17 +36,52 @@
 .no-js .navbar-collapse:target .navbar-collapse-close {
     display: block;
 }
-
-.site-title {
+#primary-nav{
+    padding: 26.5px 0;
+}
+#primary-nav #navbar-collapse{
+    padding: 8px 0;
+}
+#primary-nav ul li{
     display: block;
-    background: url("../img/logo-clp-lab.png") center left no-repeat;
-    background-size: 275px 48px;
-    width: 275px;
-    height: 48px;
-    text-indent: -9999px;
+    width: 100%;
+    text-align: center;
 }
 
-.navbar-collapse li {height: 101px;}
-
-
-
+#primary-nav ul li ul{
+    display: none;
+}
+.container>.navbar-header{
+    margin: 0;
+}
+.site-title{
+    font-size: 0;
+    margin: 0;
+    float: left;
+}
+.site-title {
+    background: url("../img/logo-clp-lab.png") center left no-repeat;
+    background-size: 240px 42px;
+    width: 240px;
+    height: 42px;
+    margin-left: 10px;
+}
+@media (min-width: 768px){
+    #primary-nav ul li{
+        width:  auto;
+        padding: 12px 0;
+    }
+    #primary-nav ul a{
+        padding: 0;
+        margin: 0;
+    }
+    #primary-nav ul li ul{
+        display: block;
+    }
+    .site-title {
+        background-size: 275px 48px;
+        width: 275px;
+        height: 48px;
+        margin-left: 0px;
+    }
+}
