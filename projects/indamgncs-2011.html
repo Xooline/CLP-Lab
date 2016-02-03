@@ -65,11 +65,11 @@
 </div>
 
 <section class="projects-wrapper">
-    <a class="main-project-container" href="#" id="indamgncs-2015">
+    <a class="main-project-container" href="#" id="indamgncs-2011">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>INDAM GNCS/2015</h2>
+                    <h2>INDAM GNCS/2011</h2>
                     <h3>Constraint-Based Search<br />
                         using GPUs and applications<br />
                         to protein structure prediction.</h3>
@@ -81,14 +81,13 @@
 <div class="container" id="project-text-container">
     <div class="row">
         <div class="col-md-12">
-            <h4>Responsabile: Agostino Dovier</h4>
+            <h4>Responsabile: Alessandro Dal Palù</h4>
             <strong>Abstract</strong>
-            <p>Negli ultimi anni la diffusione delle General-Purpose Graphics Processing Units (in breve, GPU) sia come supporto hardware presente nella stragrande maggioranza degli attuali calcolatori (fissi e portatili) che come scheda aggiuntiva capace di offrire un alto grado di parallelismo a basso costo, ha spinto ricercatori di varie discipline ad esplorarne le potenzialità per gli scopi di loro interesse. Dal 2012 il gruppo dei proponenti ha presentato, in lavori su atti di convegno e riviste, diversi contributi per sfruttare le GPU per la ricerca di soluzioni in problemi vincolati, dapprima affrontando la risoluzione del problema SAT, proseguendo nella direzione di sviluppare un, più generale, ASP solver, per arrivare alla definizione di un constraint solver. In questo contesto, la GPU si è mostrata estremamente efficiente per la ricerca approssimata di soluzioni con tecniche di Large Neighborhood Search (LNS) e promettente per la parallelizzazione degli algoritmi di propagazione di vincoli complessi (denominati vincoli globali). La generalità e la capacità di manipolazione numerica di un constraint solver permette una agevole codifica del problema della predizione di una proteina e la tecnica di LNS si è mostrata particolarmente adatta alla rapida predizione di strutture sub-ottime.</p>
-            <p>Il presente progetto si articolerà principalmente ma non esclusivamente nelle seguenti tre direttive principali:</p>
+            <p>Scopo del progetto è’ studiare le potenzialità delle architetture di calcolo parallelo offerte dalle moderne GPGPU e di identificare parti dei motori Prolog e risolutori CLP(FD) e ASP che si prestano ad una parallelizzazione su tali architetture. Si pongono tre obiettivi principali:</p>
             <ol>
-                <li>studio ed implementazione parallela di algoritmi per la propagazione di vincoli globali complessi</li>
-                <li>testing delle implementazioni di cui al punto sopra sui benchmarks della Minizinc challenge, competizione annuale dei constraint solver</li>
-                <li>testing e tuning delle implementazioni di cui sopra in varianti del problema del protein structure prediction (loop modeling, protein insertion, docking, etc).</li>
+                <li>offrire una versione di Prolog o ASP che utilizzi in modo trasparente e nativo le caratteristiche parallele di schede grafiche</li>
+                <li>studiare e re-implementare gli algoritmi alla base dei sistemi Prolog, CLP e ASP, basando il modello di calcolo sulla presenza di una architettura di tipo CUDA o OpenCL</li>
+                <li>studio di scenari applicativi concreti e di dimensioni realistiche: la predizione di struttura tridimensionale di proteine mediante CLP(FD), linguaggi per il planning riconducibili ad ASP e CLP.</li>
             </ol>
         </div>
     </div>

@@ -65,14 +65,14 @@
 </div>
 
 <section class="projects-wrapper">
-    <a class="main-project-container" href="#" id="indamgncs-2015">
+    <a class="main-project-container" href="#" id="indamgncs-2005">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>INDAM GNCS/2015</h2>
-                    <h3>Constraint-Based Search<br />
-                        using GPUs and applications<br />
-                        to protein structure prediction.</h3>
+                    <h2>INDAM GNCS/2005</h2>
+                    <h3>Sviluppo di risolutori di<br />
+                        vincoli e loro applicazioni in<br />
+                        teoria dei codici e bioinformatica.</h3>
                 </div>
             </div>
         </div>
@@ -83,12 +83,13 @@
         <div class="col-md-12">
             <h4>Responsabile: Agostino Dovier</h4>
             <strong>Abstract</strong>
-            <p>Negli ultimi anni la diffusione delle General-Purpose Graphics Processing Units (in breve, GPU) sia come supporto hardware presente nella stragrande maggioranza degli attuali calcolatori (fissi e portatili) che come scheda aggiuntiva capace di offrire un alto grado di parallelismo a basso costo, ha spinto ricercatori di varie discipline ad esplorarne le potenzialità per gli scopi di loro interesse. Dal 2012 il gruppo dei proponenti ha presentato, in lavori su atti di convegno e riviste, diversi contributi per sfruttare le GPU per la ricerca di soluzioni in problemi vincolati, dapprima affrontando la risoluzione del problema SAT, proseguendo nella direzione di sviluppare un, più generale, ASP solver, per arrivare alla definizione di un constraint solver. In questo contesto, la GPU si è mostrata estremamente efficiente per la ricerca approssimata di soluzioni con tecniche di Large Neighborhood Search (LNS) e promettente per la parallelizzazione degli algoritmi di propagazione di vincoli complessi (denominati vincoli globali). La generalità e la capacità di manipolazione numerica di un constraint solver permette una agevole codifica del problema della predizione di una proteina e la tecnica di LNS si è mostrata particolarmente adatta alla rapida predizione di strutture sub-ottime.</p>
-            <p>Il presente progetto si articolerà principalmente ma non esclusivamente nelle seguenti tre direttive principali:</p>
+            <p>Il progetto si proponeva di affrontare varie tematiche relative alla programmazione con vincoli.</p>
             <ol>
-                <li>studio ed implementazione parallela di algoritmi per la propagazione di vincoli globali complessi</li>
-                <li>testing delle implementazioni di cui al punto sopra sui benchmarks della Minizinc challenge, competizione annuale dei constraint solver</li>
-                <li>testing e tuning delle implementazioni di cui sopra in varianti del problema del protein structure prediction (loop modeling, protein insertion, docking, etc).</li>
+                <li>Nell’area dei vincoli su domini finiti il principale obiettivo era quello dello sviluppo di un risolutore di vincoli ad-hoc per vincoli su reticoli adatti a discretizzare le proteine, al fine di ottimizzare il codice per la predizione recentemente pubbliacto da alcuni proponenti</li>
+                <li>Nell’area dei Vincoli su intervalli, si intendeva sviluppare un risolutore di vincoli in grado di minimizzare (eventualmente in modo approssimato) funzioni reali con variabili vincolate a stare in intervalli.</li>
+                <li>Nell’area dei vincoli su insiemi (e affini) si intendeva procedere ad investigare le problematiche connesse a linguaggi di programmazione con vincoli di tipo insiemistico/iperinsiemistico/multiinsiemistico.</li>
+                <li>Nell’area dell’Identificazione di segnali biologici nel genoma, come spiegato si intende usare la programmazione con vincoli per integrare la fase di ricerca di segnali e la successiva fase di filtraggio.</li>
+                <li>Infine, si desidera integrare le idee utilizzate nei risolutori per answer set programming e nei risolutori per vincoli su domini finiti in CLP(FD) in un unico risolutore adatto ad affrontare, in generale, problemi NP-completi.</li>
             </ol>
         </div>
     </div>
