@@ -53,6 +53,9 @@ a:hover{
 	color:#8BCB12;
 	text-decoration: underline;
 }
+a:focus {
+    color: #8bcb12;
+}
 .button:hover {
     color: #8BCB12;
     background: #E1FFA9;
@@ -688,6 +691,16 @@ article header h2:hover {color: #8bcb12;}
 	color: #6f6f6f;
 }
 .older-news i{ color: #000; margin-right: 20px; }
+
+.share {margin-top: 50px;}
+.share p {
+    display: inline;
+    color: black;
+    font-weight: bold;
+    margin-right: 12px;
+}
+.share button {display: inline;}
+
 
 /*** RIGHT SIDEBAR ***/
 .right-sidebar {
