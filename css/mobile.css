@@ -6,6 +6,8 @@
 - Projects
 - Software
 - Contacts
+- News
+	- Right Sidebar
 - Footer
 
 ********/
@@ -118,62 +120,24 @@
 	text-align: center;
 	font-family: Orbitron;
 }
-
 #software ul.tree-ul{
 	padding: 0;
 	padding-top: 30px;
+	padding-left: 60px;
     width: 100%;
-    background: url('../img/vertical-arrow.png') top center;
+    background: url('../img/vertical-arrow.png') top left;
     background-repeat: no-repeat;
-    list-style: none;
     background-size: auto 100%;
-}
-
-#software ul.tree-ul li{
-	margin-right: 1px;
-	display: block;
-	position: relative;
-	text-align: center;
-	padding-top: 25px;
-}
-
-#software ul.tree-ul li:nth-child(n+2)::before{
-	display: block;
-	content:" ";
-	height: 2px;
-	background: #d2d2d2;
-    position: relative;
-    z-index: -99;
-    top:22px;
-}
-#software ul.tree-ul li.strange::before{
-	top:60px;
-}
-#software ul.tree-ul li:nth-child(even){
-	padding-right: 0;
-    width: 27.3333%;
-    transform: translateX(84%);
-}
-#software ul.tree-ul li:nth-child(odd){
-	padding-left: 0;
-	width: 27.3333%;
-    transform: translateX(184%);
-}
-#software ul.tree-ul li:first-child{
-	width: 100%;
-	text-align: center;
-	transform: translateX(0);
 }
 #software ul.tree-ul li:first-child a span{
 	color: #6f6f6f;
 }
 #software ul.tree-ul li a{
 	text-decoration: none;
-	padding: 0 12px;
     font-size: 2.3em;
     font-weight: 600;
     color: #8BCB12;
-    background-color: #fcfcfc;
+    background-color: transparent;
     line-height: 1.2em;
 }
 #software ul.tree-ul li a span{
@@ -183,13 +147,11 @@
 #software ul.tree-ul li a:hover{
 	text-decoration: underline;
 }
-
 #software-h2 {
-	padding: 130px 88px;
-	text-align: right;
+	padding: 15px 0px;
+	text-align: center;
 	font-weight: bold;
 }
-
 #software-ul {
     padding: 27px 88px;
     text-align: left;
@@ -205,8 +167,56 @@
 	color: #000;
 }
 #col-img-background{
+	margin-left: 30px;
     margin-top: 40px;
-	background: url('../img/separator-software-down.png') no-repeat; 
+	background: url('../img/separator-software-down.png') no-repeat;
+	background-size: auto 100%;
+}
+
+/*** NEWS ***/
+.article-date {
+    font-family: Orbitron;
+    font-size:0.75em;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+.white-background{background-color:white;}
+article h2 {margin-bottom:5px;}
+article head {height: 100%;}
+article header h2:hover {color: #8bcb12;}
+.older-news{
+	margin-top: 40px;
+    padding-bottom: 15px;
+}
+.older-news a{
+	font-family: 'Orbitron';
+	font-size: 1.2em;
+	color: #6f6f6f;
+}
+.older-news i{ color: #000; margin-right: 20px; }
+
+/*** RIGHT SIDEBAR ***/
+.right-sidebar {
+    border-left: 3px solid #8BCB12;
+    position: fixed;
+    padding-left:15px;
+}
+.right-sidebar h3 {
+    color: #6F6F6F;
+}
+.right-sidebar ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+.right-sidebar li {
+	padding-left: 1em;
+	text-indent: .5em;
+	color: #8BCB12;
+}
+.right-sidebar li::before {
+	content: "• ";
+	color: #6F6F6F;
 }
 
 /*** CONTACTS ***/
@@ -355,6 +365,61 @@ footer a:hover { color:#ccc;}
 	#project-text-container { margin-top:30px; }
 	
 	/*** SOFTWARE ***/
+	#software ul.tree-ul{
+		padding: 0;
+		padding-top: 30px;
+	    width: 100%;
+	    background: url('../img/vertical-arrow.png') top center;
+	    background-repeat: no-repeat;
+	    list-style: none;
+	    background-size: auto 100%;
+	}
+	#software ul.tree-ul li{
+		margin-right: 1px;
+		display: block;
+		position: relative;
+		text-align: center;
+		padding-top: 25px;
+	}
+	#software ul.tree-ul li:nth-child(n+2)::before{
+		display: block;
+		content:" ";
+		height: 2px;
+		background: #d2d2d2;
+	    position: relative;
+	    z-index: -99;
+	    top:22px;
+	}
+	#software ul.tree-ul li.strange::before{
+		top:60px;
+	}
+	#software ul.tree-ul li:nth-child(even){
+		padding-right: 0;
+	    width: 27.3333%;
+	    transform: translateX(84%);
+	}
+	#software ul.tree-ul li:nth-child(odd){
+		padding-left: 0;
+		width: 27.3333%;
+	    transform: translateX(184%);
+	}
+	#software ul.tree-ul li:first-child{
+		width: 100%;
+		text-align: center;
+		transform: translateX(0);
+	}
+	#software ul.tree-ul li a{
+		background-color: #fcfcfc;
+		padding: 2px 12px;
+	}
+	#software-h2 {
+		padding: 130px 88px;
+		text-align: right;
+		font-weight: bold;
+	}
+	#col-img-background{
+		margin-left: 0;
+	}
 	
 
 	/*** FOOTER ***/
