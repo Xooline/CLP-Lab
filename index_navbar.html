@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap navbar-collapse without Javascript (CSS-only)</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrap navbar-collapse without Javascript (CSS-only)">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-static-top" id="navbar">
+    <div class="container" id="primary-nav">
+        <div class="navbar-header">
+            <a class="navbar-brand site-title" href="index_navbar.html">Project name</a>
+            <a href="#navbar-collapse" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+        <div id="navbar-collapse" class="navbar-collapse navbar-right collapse">
+            <a class="navbar-collapse-close" href="#navbar">Close menu</a>
+            <ul class="nav navbar-nav">
+                <li class="current-menu-item"><a href="index.html" >Home</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"href="projects.html">Projects</a>
+                    <!--<ul class="dropdown-menu">
+                        <li><a href="projects/indamgncs-2015.html">INDAM/GNCS 2015</a></li>
+                        <li><a href="#">INDAM/GNCS 2014</a></li>
+                        <li><a href="#">INDAM/GNCS 2011</a></li>
+                        <li><a href="#">INDAM/GNCS 2010</a></li>
+                        <li><a href="#">INDAM/GNCS 2005</a></li>
+                    </ul>-->
+                </li>
+                <li>
+                    <a href="software.html">Software</a>
+                    <!--<ul>
+                        <li><a href="#">CP on GPU</a></li>
+                        <li><a href="#">CUD@SAT</a></li>
+                        <li><a href="#">Planning</a></li>
+                        <li><a href="#">GELATO</a></li>
+                        <li><a href="#">Coinduction and Bisimulation</a></li>
+                    </ul>-->
+                </li>
+                </li>
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+<div class="container">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et semper ante. Maecenas pretium ac urna sit amet ultricies. Phasellus nunc metus, convallis sed augue faucibus, vestibulum mattis ligula. Proin ornare urna et auctor elementum. Morbi lorem lorem, varius sed erat vel, facilisis imperdiet nisl. In eu massa sit amet dui sodales congue a quis metus. Maecenas interdum mi vitae odio vulputate, eget aliquam sapien fringilla. Quisque fermentum massa at elit porttitor maximus. Vestibulum porta imperdiet venenatis. Integer dignissim mi vel sapien posuere rhoncus. Nam ac leo sit amet velit pulvinar faucibus. Suspendisse feugiat enim enim, ac blandit eros vulputate eu. Nam eu tortor vehicula, tincidunt arcu sit amet, volutpat augue. Proin congue facilisis lectus vel dictum.
+    </p>
+    <p>
+        Pellentesque et augue dapibus, condimentum sapien eget, scelerisque arcu. Sed nec dignissim ex. Nullam ac suscipit orci. Praesent porta et arcu nec luctus. Phasellus accumsan lacus eu lacinia placerat. Aenean scelerisque, diam vel accumsan placerat, purus odio fermentum lacus, in pellentesque quam mauris et sapien. Aliquam ut molestie elit. In hac habitasse platea dictumst. Pellentesque id nisl vel nunc aliquet sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque aliquam risus orci, lacinia egestas mauris mollis at. Aenean augue nunc, mollis dictum porttitor et, efficitur eget odio. Donec maximus ligula id vehicula pharetra.
+    </p>
+</div>
+</body>
+</html>
