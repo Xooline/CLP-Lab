@@ -497,6 +497,9 @@ footer a:hover { color:#ccc;}
         height: 48px;
         margin-left: 0px;
     }
+    .navbar>.container .navbar-brand{
+		margin-left: 0;
+	}
 	/*** PROJECTS ***/
 	.projects-wrapper .main-project-container {
 		height: 180px;
@@ -633,6 +636,10 @@ footer a:hover { color:#ccc;}
 
 /* Large Devices, Wide Screens */
 @media (min-width : 1200px) {
+	/*** HEADER ***/
+	.navbar>.container .navbar-brand{
+		margin-left: 0;
+	}
 	.container {
 	    width: 1170px;
 	}
