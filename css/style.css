@@ -49,7 +49,15 @@ body {
 }
 .float-right {float: right;}
 .clear-both {clear: both;}
-
+a:hover{
+	color:#8BCB12;
+	text-decoration: underline;
+}
+.button:hover {
+    color: #8BCB12;
+    background: #E1FFA9;
+    text-decoration: none;
+}
 a{ color:#8BCB12; }
 .no-display{ display: none;}
 ul.no-style-ul , ul.no-style-ul li{
@@ -176,6 +184,10 @@ header nav.container{
 	border: none;
 	margin-bottom: 0;
 }
+.navbar-default .navbar-toggle{
+	border-color: #8bcb12;
+    border-radius: 0;
+}
 #primary-nav{
     padding: 26.5px 0;
 }
@@ -222,17 +234,13 @@ header nav.container{
 	font-size:17px;
 	line-height:32px;
 	transition: box-shadow .5s;
+	background-color: #fcfcfc;
 }
 #primary-nav ul a:hover {
 	box-shadow: inset 0px -2px 0px 0px #8BCB12;
 }
 #primary-nav li > a:only-child:after { margin-left: 0; content: ''; }
-#primary-nav li > a:after { 
-	font-family: FontAwesome; 
-	color: #6f6f6f;
-	margin-left: 3px; 
-	content: '\f107'; 
-}
+
 #primary-nav ul li ul{
     display: none;
 }
@@ -806,7 +814,7 @@ footer .right-footer {
 	text-align: center;
 }
 footer a { color: #fff; text-decoration: underline; }
-
+footer a:hover { color:#ccc;}
 
 /* Custom, iPhone Retina */ 
 @media (min-width : 320px) {
@@ -825,15 +833,7 @@ footer a { color: #fff; text-decoration: underline; }
 /* Small Devices, Tablets */
 @media (min-width : 768px) {
 	/*** GENERAL ***/
-	a:hover{
-		color:#8BCB12;
-		text-decoration: underline;
-	}
-	.button:hover {
-	    color: #8BCB12;
-	    background: #E1FFA9;
-	    text-decoration: none;
-	}
+	
 	/*** Header ***/
 	#primary-nav ul li{
         width:  auto;
@@ -855,6 +855,13 @@ footer a { color: #fff; text-decoration: underline; }
     .navbar>.container .navbar-brand{
 		margin-left: 0;
 	}
+	#primary-nav li > a:after { 
+		font-family: FontAwesome; 
+		color: #6f6f6f;
+		margin-left: 3px; 
+		content: '\f107'; 
+	}
+
 	/*** BREADCRUMBS NAV ***/
 	.breadcrumbs{
 		display: block;
@@ -1001,8 +1008,6 @@ footer a { color: #fff; text-decoration: underline; }
 		text-align: left;
 		padding-bottom: 0;
 	}
-	footer a:hover { color:#ccc;}
-
 }
 
 /* Medium Devices, Desktops */
